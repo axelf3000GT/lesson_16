@@ -100,10 +100,10 @@ public class TestClasses {
 
     @Test(priority = 10)
     public void testPlaceholdersInPaymentForm() {
-        Assert.assertEquals(paymentPage.getEmptyFieldPlaceholder(paymentPage.cardNumberLocator), "Номер карты");
-        Assert.assertEquals(paymentPage.getEmptyFieldPlaceholder(paymentPage.expirationDateLocator), "Срок действия");
-        Assert.assertEquals(paymentPage.getEmptyFieldPlaceholder(paymentPage.cvcLocator), "CVC");
-        Assert.assertEquals(paymentPage.getEmptyFieldPlaceholder(paymentPage.holderLocator), "Имя держателя (как на карте)");
+        Assert.assertEquals(paymentPage.getEmptyFieldPlaceholder(paymentPage.cardNumberLocator), "Номер карты", "Неверный PLACEHOLDER Номер Карты");
+        Assert.assertEquals(paymentPage.getEmptyFieldPlaceholder(paymentPage.expirationDateLocator), "Срок действия", "Неверный PLACEHOLDER Срок действия");
+        Assert.assertEquals(paymentPage.getEmptyFieldPlaceholder(paymentPage.cvcLocator), "CVC", "Неверный PLACEHOLDER CVC");
+        Assert.assertEquals(paymentPage.getEmptyFieldPlaceholder(paymentPage.holderLocator), "Имя держателя (как на карте)", "Неверный PLACEHOLDER Имя держателя (как на карте)");
     }
 
 
